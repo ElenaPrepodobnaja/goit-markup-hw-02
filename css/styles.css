@@ -1,3 +1,16 @@
+:root {
+  --primeri-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+}
+body {
+  background: #ffffff;
+  font-family: Roboto;
+  color: var(--title-text-color);
+}
+ul {
+  list-style: none;
+}
 .logo {
   font-family: Raleway;
   font-style: normal;
@@ -11,12 +24,10 @@
 .logo-studio {
   color: #030303;
 }
-.headline {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
+.site-nav a {
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
 }
