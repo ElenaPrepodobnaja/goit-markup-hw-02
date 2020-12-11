@@ -6,6 +6,10 @@
 }
 body {
   font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
   background: #ffffff;
   color: var(--title-text-color);
@@ -18,25 +22,19 @@ a {
 }
 
 /* header */
-.logo {
+.logo-nav {
   font-family: "Raleway", sans-serif;
   font-style: 400;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  color: #030303;
 }
 .logo-web {
   color: var(--accent-color);
 }
-.logo-studio {
-  color: #030303;
-}
 .site-nav a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   color: var(--title-text-color);
 }
 .site-nav a:hover,
@@ -47,11 +45,6 @@ a {
   color: var(--accent-color);
 }
 .auth-nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
   color: var(--primeri-text-color);
 }
 .auth-nav:hover,
@@ -74,11 +67,6 @@ a {
   color: var(--hero-color);
 }
 .hero-button {
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-.text-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -88,25 +76,27 @@ a {
   letter-spacing: 0.06em;
 
   color: var(--hero-color);
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 /* Особенности */
 .features-name {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .features-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--primeri-text-color);
 }
 /* Чем мы занимаемся */
-.projects h3 {
+.projects-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -114,7 +104,7 @@ a {
   letter-spacing: 0.03em;
 }
 /* Наша команда */
-.command h2 {
+.command-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -143,7 +133,6 @@ a {
 }
 .address {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
@@ -152,7 +141,6 @@ a {
 }
 .contacts {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -194,7 +182,13 @@ a {
 
   color: var(--primeri-text-color);
 }
-.footer-studio {
+.logo-footer {
+  font-family: "Raleway", sans-serif;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
   color: var(--hero-color);
 }
 .address:hover,
