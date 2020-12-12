@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --hero-color: #ffffff;
+  --footer-color: #2f303a;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -11,7 +12,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  background: #ffffff;
+  background: var(--hero-color);
   color: var(--title-text-color);
 }
 ul {
@@ -54,7 +55,7 @@ a {
 
 /*Герой*/
 .hero-section {
-  background: #2f303a;
+  background: var(--footer-color);
 }
 .hero-name {
   font-weight: 900;
@@ -96,14 +97,7 @@ a {
   color: var(--primeri-text-color);
 }
 /* Чем мы занимаемся */
-.projects-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-/* Наша команда */
+.projects-title,
 .command-title {
   font-weight: 700;
   font-size: 36px;
@@ -111,39 +105,35 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.command-name {
-  font-weight: 500;
+/* Наша команда */
+.command {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
+.command-name {
+  font-weight: 500;
+}
 .command-profession {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--primeri-text-color);
 }
 /* Подвал */
 .footer {
-  background: #2f303a;
-}
-.address {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  background: var(--footer-color);
+}
+.address {
   font-style: normal;
 
   color: var(--hero-color);
 }
 .contacts {
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -166,6 +156,10 @@ a {
 }
 .filter-text:hover,
 .filter-text:focus {
+  color: var(--hero-color);
+}
+.filter-button.current {
+  background-color: var(--accent-color);
   color: var(--hero-color);
 }
 .project-title {
